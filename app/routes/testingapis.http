@@ -1,0 +1,26 @@
+### run post request
+POST http://laravelapp.lndo.site/api/employees
+Content-Type: application/json
+
+{
+  "title": "d title",
+  "description": "d description"
+}
+
+### run get request
+GET http://laravelapp.lndo.site/api/employees
+Accept: application/json
+
+### get employee by id
+GET http://laravelapp.lndo.site/api/employees/6
+Accept: application/json
+
+###update and RESTful api  ...DONT DO PUT ON DELETE BECAUSE LANDO ENVIRONMENT DOESNT SUPPORT THEM RIGHT NOW
+PUT http://laravelapp.lndo.site/api/employees
+Content-Type: application/json
+
+{
+    "title": "updated title",
+    "description": "updated description",
+    "_method": "PUT"
+}
